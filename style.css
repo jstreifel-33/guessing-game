@@ -1,16 +1,19 @@
 body{
-background-color: #D1BF91;
+    background-color: #D1BF91;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 header{
     background-color:#C7C8C4;
     color: #A6341B;
     font-family:fantasy;
-
 }
 
 main{
     background-color:#C7C8C4;
+    border: thin solid #60371E;
 }
 
 p{
@@ -22,6 +25,7 @@ h2{
     background-color: #C7C8C4;
     color: #A6341B;
     font-family: fantasy;
+    margin-top: 0px;
 }
 
 button{
@@ -29,4 +33,16 @@ button{
     color:#F9C743;
     width:10%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    color:#60371E;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C7C8C4;
+    margin-top:auto;
+    border: thin solid #60371E;
+}
+
+a{
+    color:#A6341B;
 }
