@@ -1,18 +1,32 @@
 body{
-
+background-color: #D1BF91;
 }
 
 header{
+    background-color:#C7C8C4;
+    color: #A6341B;
+    font-family:fantasy;
 
 }
 
 main{
-    background-color:aliceblue
+    background-color:#C7C8C4;
+}
+
+p{
+    color:#60371E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    background-color: #C7C8C4;
+    color: #A6341B;
+    font-family: fantasy;
 }
 
 button{
-    background-color:black;
-    color:aqua;
-    height:20px;
+    background-color:#60371E;
+    color:#F9C743;
     width:10%;
+    font-family: Arial, Helvetica, sans-serif;
 }
