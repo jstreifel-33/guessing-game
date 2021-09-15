@@ -9,21 +9,28 @@ header{
     background-color:#C7C8C4;
     color: #A6341B;
     font-family:fantasy;
-    border:thick solid #60371E;
+    border-width: medium thick thick medium;
+    border-style:solid;
+    border-color:#60371E;
     padding-left:10px;
 }
 
 main{
     background-color:#C7C8C4;
-    border: thin solid #60371E;
+    border-width: thin medium medium thin;
+    border-style:solid;
+    border-color:#60371E;
     padding:5px;
 }
 
 p{
     color:#60371E;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top:5px;
 }
-
+.lists{
+    margin-top:5px;
+}
 li{
     color:#60371E;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,6 +40,7 @@ h2{
     background-color: #C7C8C4;
     color: #A6341B;
     font-family: fantasy;
+    margin-bottom:0;
 }
 
 #quiz{
@@ -49,9 +57,10 @@ button{
 footer{
     text-align:center;
     background-color: #C7C8C4;
-    margin-top:auto;
+    margin-top: auto;
     border: thin solid #60371E;
     margin-bottom:2%;
+    
 }
 
 a{
