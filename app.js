@@ -6,6 +6,7 @@ alert("Nice to meet you, " + userName + ". Thanks for visiting my page!");
 
 //prompt user with 5 yes or no questions related to bio upon button press
 function beginquiz(){
+    let score = 0;
 
     console.log("quiz start"); //confirm button is working
 
@@ -14,6 +15,7 @@ function beginquiz(){
     if(ans1 == "y" || ans1 == "yes"){
         //console.log("Question 1 correct!");
         alert("Question 1 correct!");
+        score++;
     }else{
         //console.log("Question 1 incorrect! :(");
         alert("Question 1 incorrect! :(");
@@ -24,6 +26,7 @@ function beginquiz(){
     if(ans2 == "n" || ans2 == "no"){
         //console.log("Question 2 correct!");
         alert("Question 2 correct!");
+        score++;
     }else{
         //console.log("Question 2 incorrect! :(");
         alert("Question 2 incorrect! :(");
@@ -34,6 +37,7 @@ function beginquiz(){
     if(ans3 == "n" || ans3 == "no"){
         //console.log("Question 3 correct!");
         alert("Question 3 correct!");
+        score++
     }else{
         //console.log("Question 3 incorrect! :(");
         alert("Question 3 incorrect! :(");
@@ -44,6 +48,7 @@ function beginquiz(){
     if(ans4 == "n" || ans4 == "no"){
         //console.log("Question 4 correct!");
         alert("Question 4 correct!");
+        score++
     }else{
         //console.log("Question 4 incorrect! :(");
         alert("Question 4 incorrect! :(");
@@ -54,8 +59,83 @@ function beginquiz(){
     if(ans1 == "y" || ans5 == "yes"){
         //console.log("Question 5 correct!");
         alert("Question 5 correct!");
+        score++
     }else{
         //console.log("Question 5 incorrect! :(");
         alert("Question 5 incorrect! :(");
+    }
+
+
+    //Refactor original code. store questions and answers as array [question, long answer, short answer]
+    //let q1 = ["I have a name! Are my initials JS? (yes/no)", "yes", "y"]
+
+    //create 6th question number guessing with 4 chances. Return high, low, or correct, reveal answer if guesses run out.
+    let correct6 = 7;
+    let ans6;
+
+    for (let i=0; i < 4; i++){
+
+        if (i==0){
+            ans6 = prompt("I'm thinking of a number from 0 to 10, can you guess what it is? You have 4 chances!");
+        }else{
+            ans6 = prompt("Nice try. Attempt " + (i+1) + "/4! Same number from 0 to 10. Can you guess it?");
+        }
+
+        if (ans6 == correct6){
+            alert("That's correct! Well done!");
+            score++;
+            break;
+        }else if(ans6 > correct6){
+            alert("That's too high!");
+        }else if (ans6 < correct6){
+            alert("That's too low!");
+        }
+        
+        if(i == 3 && ans6 != correct6){
+            alert("Sorry but you ran out of attempts! :( The correct answer was " + correct6 + ".");
+        }
+    }
+
+    //create 7th question with multiple correct answers stored in array. 6 attempts. Display possible correct answers.
+    let ans7;
+    let escL7 = false
+    for (let i=0; i < 6; i++){
+        if(i == 0){
+            ans7 = prompt("In case you were wondering, Hades is a great game. Also greek mythology is pretty cool. Can you name one of the 3 greek furies? You have 6 tries!").toLowerCase();
+        }else{
+            ans7 = prompt("Nice try. Attempt " + (i+1) + "! Can you name one of the Greek Furies?").toLowerCase();
+        }
+        console.log(ans7);
+        switch (ans7){
+            case 'alecto':
+                alert("That's correct! Alecto was a Greek Fury. Her sisters were Tisiphone and Megaera.");
+                escL7 = true;
+                break;
+            case 'tisiphone':
+                alert("That's correct! Tisiphone was a Greek Fury. Her sisters were Alecto and Megaera.");
+                escL7 = true;
+                break;
+            case 'megaera':
+                alert("That's correct! Megaera was a Greek Fury. her sisters were Alecto and Tisiphone.");
+                escL7 = true;
+                break;
+            default:
+                alert("Incorrect!");
+                break;
+
+        }if(escL7){
+            score++
+            break;
+        }else if(i == 5){
+            alert("You're out of attempts! :( The 3 Greek Furies were Alecto, Tisiphone, and Megaera.")
+        }
+    }
+
+    //keep track of user score (out of 7 points)
+
+    if (score == 7){
+        alert("Hey, you're pretty good. You got 7/7 questions right!");
+    }else{
+        alert("You got " + score + "/7 questions right. If you'd like to try again press Begin!");
     }
 }
