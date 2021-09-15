@@ -9,11 +9,15 @@ header{
     background-color:#C7C8C4;
     color: #A6341B;
     font-family:fantasy;
+    border:thick solid #60371E;
+    padding-left:10px;
 }
 
 main{
     background-color:#C7C8C4;
     border: thin solid #60371E;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 p{
@@ -38,6 +42,7 @@ button{
 footer{
     color:#60371E;
     font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
     background-color: #C7C8C4;
     margin-top:auto;
     border: thin solid #60371E;

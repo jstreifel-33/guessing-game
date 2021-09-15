@@ -6,6 +6,7 @@ alert("Nice to meet you, " + userName + ". Thanks for visiting my page!");
 
 //prompt user with 5 yes or no questions related to bio upon button press
 function beginquiz(){
+
     console.log("quiz start"); //confirm button is working
 
     let ans1 = prompt("I have a name! Are my initials JS? (yes/no)").toLowerCase(); //correct answer: yes
@@ -48,7 +49,7 @@ function beginquiz(){
         alert("Question 4 incorrect! :(");
     }
 
-    let ans5 = prompt("I'm attending a coding bootcamp! Is the name of that bootcamp Code Fellows? (yes/no)").toLowerCase();//correct answer: yes
+    let ans5 = prompt("I'm attending a coding bootcamp! Is the name of that bootcamp Code Fellows? (yes/no)").toLowerCase(); //correct answer: yes
     console.log("Q5 answer: " + ans5);
     if(ans1 == "y" || ans5 == "yes"){
         //console.log("Question 5 correct!");
