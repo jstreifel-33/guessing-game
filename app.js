@@ -115,7 +115,7 @@ function beginquiz(){
     alert('You got ' + score + '/7 questions right. If you\'d like to try again press Begin!');
   }
 }
-//comment so I can commit changes to strings.
+
 //Posterity: old code for questions 1-5
 
 // let ans1 = prompt('I have a name! Are my initials JS? (yes/no)').toLowerCase(); //correct answer: yes
