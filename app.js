@@ -52,7 +52,7 @@ function beginquiz(){
     }
     console.log('user: ' + ans6);
 
-    if (ans6 === correct6){
+    if (ans6 == correct6){
       alert('That\'s correct! Well done!');
       score++;
       break;
@@ -62,7 +62,7 @@ function beginquiz(){
       alert('That\'s too low!');
     }
 
-    if(i === 3 && ans6 !== correct6){
+    if(i == 3 && ans6 != correct6){
       alert('Sorry but you ran out of attempts! :( The correct answer was ' + correct6 + '.');
     }
   }
