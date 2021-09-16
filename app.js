@@ -39,21 +39,25 @@ function beginquiz(){
   }
 
   //Create 6th question number guessing with 4 chances. Return high, low, or correct, reveal answer if guesses run out.
-
+  //Define correct answer, declare variable to hold user answer.
   let correct6 = 7;
   let ans6;
 
   for (let i=0; i < 4; i++){
 
+    //Ask user question. Introduce game if first ask; keep count of guesses if not first guess.
     if (i === 0){
       ans6 = prompt('I\'m thinking of a number from 0 to 10, can you guess what it is? You have 4 chances!');
     }else{
       ans6 = prompt('Nice try. Attempt ' + (i+1) + '/4! Same number from 0 to 10. Can you guess it?');
     }
+
+    //Convert user answer to number for hard comparison; verify user guess in console.
     console.log('user: ' + ans6);
     ans6 = Number(ans6);
     console.log(ans6, typeof(ans6));
 
+    //Take action based on user answer.
     if (ans6 === correct6){
       alert('That\'s correct! Well done!');
       score++;
@@ -66,19 +70,23 @@ function beginquiz(){
       alert('Looks like your answer was not a number!');
     }
 
+    //Notify user if incorrect and out of guesses.
     if(i === 3 && ans6 !== correct6){
       alert('Sorry but you ran out of attempts! :( The correct answer was ' + correct6 + '.');
     }
   }
   console.log('score: ' + score);
 
-  //Create 7th question with multiple correct answers stored in array. 6 attempts. Display possible correct answers.
 
+  //Create 7th question with multiple correct answers stored in array. 6 attempts. Display possible correct answers.
+  //Declare/define variables.
   let ans7;
   let escQ7 = false;
   let key7 = ['alecto', 'tisiphone', 'megaera'];
+
   for (let i=0; i < 6; i++){
 
+    //Ask user question. Introduce game if first ask; keep count of guesses if not first guess.
     if(i === 0){
       ans7 = prompt('In case you were wondering, Hades is a great game. Also greek mythology is pretty cool. Can you name one of the 3 greek furies? You have 6 tries!').toLowerCase();
     }else{
@@ -86,6 +94,7 @@ function beginquiz(){
     }
     console.log('user: ' + ans7);
 
+    //Compare user answer in switch statement; break if correct and set escQ7 true
     switch (ans7){
     case key7[0]:
       alert('That\'s correct! Alecto was a Greek Fury. Her sisters were Tisiphone and Megaera.');
@@ -103,6 +112,7 @@ function beginquiz(){
       alert('Incorrect!');
       break;
 
+    //Break and increase score if escQ7 set true by correct answer or notify if out of guesses
     }if(escQ7){
       score++;
       break;
@@ -110,7 +120,6 @@ function beginquiz(){
       alert('You\'re out of attempts! :( The 3 Greek Furies were Alecto, Tisiphone, and Megaera.');
     }
   }
-
   console.log('score: ' + score);
 
   //Notify user of their score (out of 7 points)
