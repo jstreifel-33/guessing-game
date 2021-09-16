@@ -5,7 +5,9 @@ let userName = prompt('Hello and welcome to my web page! What is your name?');
 alert('Nice to meet you, ' + userName + '. Thanks for visiting my page!');
 
 //Prompt user with 5 yes or no questions related to bio upon button press
+// eslint-disable-next-line no-unused-vars
 function beginquiz(){
+
   let score = 0;
 
   console.log('quiz start'); //confirm button is working
