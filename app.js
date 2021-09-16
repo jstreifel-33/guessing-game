@@ -26,14 +26,15 @@ function beginquiz(){
         let question = Trivia5[i];
         //console.log(question);
         let answer = prompt(question[0]).toLowerCase();
+        console.log("user: " + answer);
         if(answer == question[1] || answer == question[2]){
             alert("Question " + (i+1) +" correct!");
             score++
         }else{
             alert("Question" + (i+1) + " incorrect!");
         }
+        console.log("score: " + score);
     }
-    console.log("score: " + score);
 
     //Create 6th question number guessing with 4 chances. Return high, low, or correct, reveal answer if guesses run out.
 
@@ -47,7 +48,7 @@ function beginquiz(){
         }else{
             ans6 = prompt("Nice try. Attempt " + (i+1) + "/4! Same number from 0 to 10. Can you guess it?");
         }
-        console.log(ans6);
+        console.log("user: " + ans6);
 
         if (ans6 == correct6){
             alert("That's correct! Well done!");
@@ -77,7 +78,7 @@ function beginquiz(){
         }else{
             ans7 = prompt("Nice try. Attempt " + (i+1) + "! Can you name one of the Greek Furies?").toLowerCase();
         }
-        console.log(ans7);
+        console.log("user: " + ans7);
 
         switch (ans7){
             case key7[0]:
