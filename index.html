@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Set charset, title, link to .css file -->
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <Title>"About me" Quiz</Title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>A Little About Me (The Author of This Page)!</h1>
-        </header>
-        <main>
-            <div class="infosection" style="background-color: transparent;">
-            <h2>Introduction</h2>
-            <!-- Create a bio with eduation history, job experience, goals. Emphasize hints for quiz.-->
-            <p>Hello, my name is Joe Streifel. I created this page to experiment with HTML, CSS, and JavaScript. I don't have a complete formal education in programming yet but I'm getting there!</p>
-            <!-- <p>I have 1 year of university under my belt. After dropping out I enlisted in the Marine Corps where I recieved an education in electronics maintenance, repair, and calibration.</p>
-            <p>After my enlistment in the Marine Corps, I worked for a private company calibrating biomedical and aviation test equipment.</p> -->
-            <p>Today, I'm training to become a software developer, and attending a bootcamp called Code Fellows to hone my skills eventually make development my career!</p>
-            </div>
 
-            <!-- Convert Work Experience and Education into unordered lists -->
-            <div class="infosection" style="background-color: transparent;">
-            <h2>My Education and Work Experience</h2>
-            <ul class="lists">
-                <li>Education</li>
-                    <ul>
-                        <li>1 year of college at UW</li>
-                        <li>Electronics training from military</li>
-                    </ul>
-                <li>Work Experience</li>
-                    <ul>
-                        <li>Washed boats in a boatyard</li>
-                        <li>Marine Corps Calibration/Repair Technician, Avionics</li>
-                        <li>Civillian Calibration Technician, Aviation / Biomedical</li>
-                    </ul>
-            </ul>
-            </div>
-            
-            <!-- Inlude a top ten list -->
-            <div class="infosection" style="background-color: transparent;">
-            <h2>My Top Ten Video Games</h2>
-            <ol class="lists">
-                <li>Gears of War</li>
-                <li>Heroes of the Storm</li>
-                <li>Dark Souls</li>
-                <li>Bloodborne</li>
-                <li>Doom Eternal</li>
-                <li>God of War (2018)</li>
-                <li>Ghost of Tsushima</li>
-                <li>Hades</li>
-                <li>Final Fantasy XIV</li>
-                <li>Elite: Dangerous</li>
-            </ol>
-            </div>
-            <hr />
-            
-            <div>
-            <h2 id="quiz">Quiz Time</h2>
-            <p>This button will initiate a 7 question quiz with 5 questions based on my short bio above, as well as 2 unrelated questions.</p>
-            <p>Click "Begin!" to start.</p>
-            <!-- Use JS to quiz user  -->
-            <button onclick="beginquiz()">Begin!</button>
-            </div>
+<head>
+  <!-- Set charset, title, link to .css file -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <Title>"About me" Quiz</Title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        </main>
-        <footer>
-            <p>This page created by Joseph Streifel. Visit me on Github: <a href="https://github.com/jstreifel-33">@jstreifel-33</a></p>
-        </footer>
-        <!-- Set up import of .js file -->
-        <script src="app.js"></script>
-    </body>
+<body>
+  <header>
+    <h1>A Little About Me (The Author of This Page)!</h1>
+  </header>
+  <main>
+    <div class="infosection">
+      <h2>Introduction</h2>
+      <!-- Create a bio with eduation history, job experience, goals. Emphasize hints for quiz.-->
+      <p>Hello, my name is Joe Streifel. I created this page to experiment with HTML, CSS, and JavaScript. I don't have
+        a complete formal education in programming yet but I'm getting there!</p>
+      <!-- <p>I have 1 year of university under my belt. After dropping out I enlisted in the Marine Corps where I recieved an education in electronics maintenance, repair, and calibration.</p>
+        <p>After my enlistment in the Marine Corps, I worked for a private company calibrating biomedical and aviation test equipment.</p> -->
+      <p>Today, I'm training to become a software developer, and attending a bootcamp called Code Fellows to hone my
+        skills eventually make development my career!</p>
+    </div>
+
+    <!-- Convert Work Experience and Education into unordered lists -->
+    <div class="infosection">
+      <h2>My Education and Work Experience</h2>
+      <ul class="lists">
+        <li>Education</li>
+        <ul>
+          <li>1 year of college at UW</li>
+          <li>Electronics training from military</li>
+        </ul>
+        <li>Work Experience</li>
+        <ul>
+          <li>Washed boats in a boatyard</li>
+          <li>Marine Corps Calibration/Repair Technician, Avionics</li>
+          <li>Civillian Calibration Technician, Aviation / Biomedical</li>
+        </ul>
+      </ul>
+    </div>
+
+    <!-- Inlude a top ten list -->
+    <div class="infosection">
+      <h2>My Top Ten Video Games</h2>
+      <ol class="lists">
+        <li>Gears of War</li>
+        <li>Heroes of the Storm</li>
+        <li>Dark Souls</li>
+        <li>Bloodborne</li>
+        <li>Doom Eternal</li>
+        <li>God of War (2018)</li>
+        <li>Ghost of Tsushima</li>
+        <li>Hades</li>
+        <li>Final Fantasy XIV</li>
+        <li>Elite: Dangerous</li>
+      </ol>
+    </div>
+    <hr />
+
+    <div>
+      <h2 id="quiz">Quiz Time</h2>
+      <p>This button will initiate a 7 question quiz with 5 questions based on my short bio above, as well as 2
+        unrelated questions.</p>
+      <p>Click "Begin!" to start.</p>
+      <!-- Use JS to quiz user  -->
+      <button onclick="beginquiz()">Begin!</button>
+    </div>
+
+  </main>
+  <footer>
+    <p>This page created by Joseph Streifel. Visit me on Github: <a
+        href="https://github.com/jstreifel-33">@jstreifel-33</a></p>
+  </footer>
+  <!-- Set up import of .js file -->
+  <script src="app.js"></script>
+</body>
+
 </html>
