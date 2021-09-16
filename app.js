@@ -51,8 +51,10 @@ function beginquiz(){
       ans6 = prompt('Nice try. Attempt ' + (i+1) + '/4! Same number from 0 to 10. Can you guess it?');
     }
     console.log('user: ' + ans6);
+    ans6 = Number(ans6);
+    console.log(ans6, typeof(ans6));
 
-    if (ans6 == correct6){
+    if (ans6 === correct6){
       alert('That\'s correct! Well done!');
       score++;
       break;
@@ -60,9 +62,11 @@ function beginquiz(){
       alert('That\'s too high!');
     }else if (ans6 < correct6){
       alert('That\'s too low!');
+    }else if(!ans6){
+      alert('Looks like your answer was not a number!');
     }
 
-    if(i == 3 && ans6 != correct6){
+    if(i === 3 && ans6 !== correct6){
       alert('Sorry but you ran out of attempts! :( The correct answer was ' + correct6 + '.');
     }
   }
