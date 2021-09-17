@@ -1,4 +1,21 @@
-# LAB - 03
+# LAB - 04
+
+## More extensions to about me
+
+This project is a continuation of LAB 03. Code was refactored in programming pairs to include the use of functions for JavaScript
+
+### Authors: Joseph Streifel & Emily Landers
+
+### Links and Resources
+
+* [Mozilla MDN](https://developer.mozilla.org/en-US/)
+* [W3 Schools](https://www.w3schools.com/)
+
+### Reflections and Comments
+
+This lab felt more like an exercise in the process of paired programming than one in functions. Either way, things went smoothly. It was good practice for the process of forking/merging in Github.
+
+<!-- # LAB - 03
 
 ## "About Me" Guessing Game Redux
 
@@ -17,7 +34,7 @@ The use of arrays and for loops in conjuction with each other is a very powerful
 
 The requirements made a pretty explicit statment not to use functions, but I left the button in. Hopefully that's ok.
 
-Added eslint for JS and had to change A LOT of formatting. Learned the proper use of `\` to allow for contractions in strings. Commenting out LAB - 02 readme contents for posterity.
+Added eslint for JS and had to change A LOT of formatting. Learned the proper use of `\` to allow for contractions in strings. Commenting out LAB - 02 readme contents for posterity. -->
 
 <!-- # LAB - 02
 
