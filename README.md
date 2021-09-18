@@ -4,7 +4,7 @@
 
 Cleaning up code to remove commented out code lines and console logs. Deploying to Github pages.
 
-### Authors: Joseph Streifel
+### Authors: Joseph Streifel & Emily Landers.
 
 ### Links and Resources
 
